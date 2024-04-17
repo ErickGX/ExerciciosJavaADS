@@ -5,7 +5,7 @@ public class Exercicio5 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        double salario_bruto , total_horas_mes;
+        double salario_bruto , total_horas_mes, salario_liquido;
 
      do {
          System.out.println("Digite o Salario Bruto");
@@ -20,6 +20,11 @@ public class Exercicio5 {
 
          System.out.println(salario_bruto);
          System.out.println(total_horas_mes);
+
+         if (salario_bruto >= 800 && salario_bruto <= 1600){
+
+             salario_liquido = salario_bruto -  salario_bruto * 0.13;
+         }
 
      }while(true);
 
