@@ -1,30 +1,40 @@
 import java.util.Scanner;
-import java.lang.Math;
 import java.util.Random;
 public class Exercicio2 {
     public static void main(String[] args) {
+
+        //ASCII art só pra deixar bonitinho não afeta em nada o codigo :D
+        System.out.println("\n" +
+                " _____                          ___ ______  _____ \n" +
+                "/  ___|                        / _ \\|  _  \\/  ___|\n" +
+                "\\ `--.  ___ _ __   __ _  ___  / /_\\ \\ | | |\\ `--. \n" +
+                " `--. \\/ _ \\ '_ \\ / _` |/ __| |  _  | | | | `--. \\\n" +
+                "/\\__/ /  __/ | | | (_| | (__  | | | | |/ / /\\__/ /\n" +
+                "\\____/ \\___|_| |_|\\__,_|\\___| \\_| |_/___/  \\____/ \n" +
+                "                                                  \n" +
+                "                                                  \n");
+
         int num, numRandom = 0, resultado;
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Digite um numero entre 0 e 100para informar-mos o quanto ele esta distante do nosso numero chave");
+        System.out.println("Digite um numero entre 0 e 100 para informar-mos o quanto ele esta distante do nosso numero chave");
          num = scanner.nextInt();
+
          //gera um numero aleatorio usando a lib random
-         //Random rand = new Random();
-         //numRandom = rand.nextInt(101);
-            numRandom = 10;
-            if (numRandom > num){
-            resultado = numRandom - num;
-                System.out.println("random maior que num"+resultado);
-            }if (numRandom < num){
+         Random rand = new Random();
+         numRandom = rand.nextInt(101);
+
+        System.out.println("O numero gerado aleatoriamente pelo sistema é : " +numRandom);
+
+            if (num > numRandom){
                 resultado = num - numRandom;
-            System.out.println("random menor que num" + resultado);
-            }else{
-            System.out.println("Os numeros gerados sãio iguais");
-        }
-
-         //if (num >= 0 && num <= 100){
-
-         ///}
+                System.out.println("O Numero informado pelo usuario é: " +num+  " e está  "+resultado+ " unidades distante do numero chave do sistema:  "+numRandom);
+            } else if (num < numRandom) {
+                resultado = numRandom - num;
+                System.out.println("O Numero informado pelo usuario é : " +num+  " e está  "+resultado+ " unidades distante do numero chave do sistema:  "+numRandom);
+            }else {
+                System.out.println("Devido a sua grande sorte o numero Gerado randomicamente pelo sistema é igual ao numero que você Digitou :D");
+            }
 
     }
 }
