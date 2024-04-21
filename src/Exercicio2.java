@@ -3,17 +3,6 @@ import java.util.Random;
 public class Exercicio2 {
     public static void main(String[] args) {
 
-        //ASCII art só pra deixar bonitinho não afeta em nada o codigo :D
-        System.out.println("\n" +
-                " _____                          ___ ______  _____ \n" +
-                "/  ___|                        / _ \\|  _  \\/  ___|\n" +
-                "\\ `--.  ___ _ __   __ _  ___  / /_\\ \\ | | |\\ `--. \n" +
-                " `--. \\/ _ \\ '_ \\ / _` |/ __| |  _  | | | | `--. \\\n" +
-                "/\\__/ /  __/ | | | (_| | (__  | | | | |/ / /\\__/ /\n" +
-                "\\____/ \\___|_| |_|\\__,_|\\___| \\_| |_/___/  \\____/ \n" +
-                "                                                  \n" +
-                "                                                  \n");
-
         int num, numRandom = 0, resultado;
         Scanner scanner = new Scanner(System.in);
 
